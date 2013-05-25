@@ -1,0 +1,5 @@
+Fix loading of content
+ADD FUNCTIONS PHP FFS
+Change header file to have Banner, Links, and Search
+Look at functions.php to switch over format indicators to authors
+
