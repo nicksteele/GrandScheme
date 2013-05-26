@@ -2,8 +2,8 @@
 /**
  * The Sidebar containing the main widget areas.
  *
- * @package Pachyderm
- * @since Pachyderm 1.0
+ * @package GrandScheme
+ * @since GrandScheme 1.0
  */
 ?>
 	<div id="secondary" class="widget-area" role="complementary">

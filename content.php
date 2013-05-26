@@ -16,7 +16,9 @@
 			<span class="comments-link"><?php comments_popup_link( __( '0', 'grandscheme' ), __( '1', 'grandscheme' ), __( '%', 'grandscheme' ) ); ?></span>
 		<?php endif; ?>
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'grandscheme' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-
+		
+		<?php echo get_avatar( get_the_author_email(), '34' ); ?>
+		 <?php the_author_meta( $field, $userID ); ?>
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php grandscheme_posted_on(); ?>
