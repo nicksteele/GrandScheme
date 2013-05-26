@@ -5,6 +5,8 @@ tie into social media and allow several authors to publish content for their fol
 
 Grand Scheme Version History:
 
+v1.4.2 - Removed Sidebar, Added avatars, Adding logo and new CSS..
+
 v1.4.2 - Oh yes, Pink Elephants!
 
 Pachyderm Version history:
