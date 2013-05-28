@@ -85,7 +85,6 @@ function grandscheme_setup() {
 	 * Add support for Post Formats
 	 */
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link', 'status', 'audio', 'chat', 'gallery' ) );
-	
 
 	/**
 	*Add support for Post Authors

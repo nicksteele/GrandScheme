@@ -25,7 +25,7 @@ function grandscheme_custom_header_setup() {
 		'width'                  => 790,
 		'height'                 => 200,
 		'flex-height'            => true,
-		'flex-width'			 => true,
+		'flex-width'		 => true,
 		'wp-head-callback'       => 'grandscheme_header_style',
 		'admin-head-callback'    => 'grandscheme_admin_header_style',
 		'admin-preview-callback' => 'grandscheme_admin_header_image',
@@ -79,7 +79,7 @@ if ( ! function_exists( 'grandscheme_header_style' ) ) :
  *
  * @since GrandScheme 1.0
  */
-function pachyderm_header_style() {
+function grandscheme_header_style() {
 
 	// If no custom options for text are set, let's bail
 	// get_header_textcolor() options: HEADER_TEXTCOLOR is default, hide text (returns 'blank') or any hex value
@@ -119,7 +119,7 @@ if ( ! function_exists( 'grandscheme_admin_header_style' ) ) :
  *
  * @since GrandScheme 1.0
  */
-function pachyderm_admin_header_style() {
+function grandscheme_admin_header_style() {
 ?>
 	<style type="text/css">
 	.appearance_page_custom-header #headimg {
@@ -175,17 +175,17 @@ function pachyderm_admin_header_style() {
 	</style>
 <?php
 }
-endif; // pachyderm_admin_header_style
+endif; // grandscheme_admin_header_style
 
-if ( ! function_exists( 'pachyderm_admin_header_image' ) ) :
+if ( ! function_exists( 'grandscheme_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see pachyderm_custom_header_setup().
+ * @see grandscheme_custom_header_setup().
  *
- * @since Pachyderm 1.0
+ * @since GrandScheme 1.0
  */
-function pachyderm_admin_header_image() { ?>
+function grandscheme_admin_header_image() { ?>
 	<div id="headimg">
 		<?php $header_image = get_header_image();
 		if ( ! empty( $header_image ) ) : ?>
@@ -201,4 +201,4 @@ function pachyderm_admin_header_image() { ?>
 		<div id="desc"<?php echo $style; ?>><?php bloginfo( 'description' ); ?></div>
 	</div>
 <?php }
-endif; // pachyderm_admin_header_image
+endif; // grandscheme_admin_header_image
