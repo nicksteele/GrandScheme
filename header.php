@@ -37,14 +37,11 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
 		<form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
-		<div><input type="text" size="18" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
-		<input type="submit" id="searchsubmit" value="Search" class="btn" />
+		<div><input type="text" size="18" value="<?php echo wp_specialchars($s, 1); ?>" placeholder="Search..." name="s" id="s" />
 		</div>
 		</form>
 		<nav id="site-navigation" class="navigation-main" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'grandscheme' ); ?></h1>
 			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'grandscheme' ); ?>"><?php _e( 'Skip to content', 'grandscheme' ); ?></a></div>
-
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

@@ -3,7 +3,7 @@ Theme Name: Grand Scheme
 Theme URI: http://github.com/nicksteele/GrandScheme
 Description: Based off Pachyderm 1.4.1 by Caroline Moore (www.carolinemoore.net)
 Version: 0.1
-Author: Nick Steele, Alex Semenyuk
+Author: Nick Steele
 Author URI: http://grandst.com
 License: GNU General Public License
 License URI: license.txt
@@ -1691,131 +1691,216 @@ ul.children .reply {
 }
 
 #page {
+
 width: 700px;
+
 }
+
+
 
 .hentry {
+
 width: 660px;
+
 }
 
+
+
 footer.entry-meta {
+
 display: inline-block;
+
 float: right;
+
 width: 72px;
+
 }
+
 
 
 .tags-links {
+
 display: inline-block;
 list-style: none;
 width: auto;
 word-wrap: normal;
 overflow: visible;
+
 }
 
-.tags-links a {
-background: silver;
-border-radius: 4px;
-color: white;
-text-align: center;
-display: inline-block;
-padding: 1px 3px;
-font-size: 10px;
-font-family: Helvetica;
-}
+
+
 
 #site-navigation {
+
 display: inline-block;
+
 float: right;
+
 width: 70%;
+
 }
+
+
 
 #searchform {
+
 display: inline-block;
+
 float: right;
+
 position: relative;
+
 top: 25px;
+
 background: rgb(224, 224, 224);
+
 padding: 1px;
+
 border-radius: 4px;
+
 }
+
+
 
 #searchform #s {
+
 background: rgb(224, 224, 224);
+
 border: none;
-font-weight: bold;
-padding-left: 6px;
+
 }
 
-#searchform #s:focus {
-outline-width: 0;
-}
 
 
 #searchsubmit { display: none; }
 
+
+
 .navigation-main { width: auto; }
 
+
+
 .navigation-main a {
+
 padding: 0px 20px;
+
 font-size: 13px;
+
 font-family: Helvetica, Sans-serif;
+
 font-weight: bold;
+
 }
+
+
 
 .comments-link {
-margin-top: 20px;
-left: 25px;
+
+margin-top: 150px;
+
+left: -100px;
+
 background-color: silver;
+
 }
+
+
 
 .ui-auth-info {
+
 display: inline-block;
+
 position: absolute;
+
 left: -120px;
+
 top: 12px;
+
 margin-top: 19px;
+
 }
+
+
 
 .ui-auth-pic {
+
 display: block;
+
 height: 70px;
+
 margin: 0 12px 4px 12px;
+
 }
+
+
 
 .ui-auth-desc {
+
 display: block;
+
 font-size: 12px;
-font-family: Helvetica;
+
+font-family: Calibri;
+
 width: 120px;
-color: rgb(151, 151, 151);
+
+color: silver;
+
 }
+
+
 
 .entry-title a {
+
 color: black;
+
 font-family: Helvetica;
+
 font-size: 22px;
+
 font-weight: bold;
+
 }
+
+
 
 .entry-title {
+
 display: inline-block;
+
 width: 80%;
+
 }
+
+
 
 .entry-header .entry-meta {
+
 display: inline-block;
+
 float: right;
+
 margin-top: 12px;
+
 }
 
+
+
 .entry-content, .entry-summary {
+
 margin: 0;
+
 font-family: Helvetica;
+
 font-size: 13px;
+
 display: inline-block;
+
 width: 550px;
+
 min-height: 200px;
+
 }
 
 
