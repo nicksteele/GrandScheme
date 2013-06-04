@@ -894,7 +894,7 @@ footer.entry-meta {
 .hentry,
 .type-page,
 .type-attachment {
-	border-bottom: 4px solid #49352f;
+	border-bottom: 2px solid silver;
 	clear: both;
 	overflow: hidden;
 	padding: 1.5em 20px;
@@ -1691,17 +1691,18 @@ ul.children .reply {
 }
 
 #page {
-width: 700px;
+width: 840px;
 }
 
 .hentry {
-width: 660px;
+width: 800px;
 }
 
 footer.entry-meta {
 display: inline-block;
-float: right;
-width: 72px;
+position: absolute;
+margin: 15px 30px;
+width: 100px;
 }
 
 
@@ -1727,7 +1728,7 @@ font-family: Helvetica;
 #site-navigation {
 display: inline-block;
 float: right;
-width: 70%;
+width: 60%;
 }
 
 #searchform {
@@ -1771,10 +1772,10 @@ background-color: silver;
 
 .ui-auth-info {
 display: inline-block;
-position: absolute;
-left: -120px;
-top: 12px;
-margin-top: 19px;
+position: relative;
+right: 14px;
+float: left;
+z-index: 10;
 }
 
 .ui-auth-pic {
@@ -1806,7 +1807,8 @@ width: 80%;
 .entry-header .entry-meta {
 display: inline-block;
 float: right;
-margin-top: 12px;
+margin-top: -70px;
+width: 100px;
 }
 
 .entry-content, .entry-summary {
