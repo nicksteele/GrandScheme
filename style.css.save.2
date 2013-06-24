@@ -842,12 +842,6 @@ a.rsswidget img {
 	padding: 0;
 	text-transform: uppercase;
 }
-.entry-header .entry-meta {
-	float: right;
-	width: 12%;
-	position: relative;
-	top: 30px;
-}
 footer.entry-meta {
 	clear: both;
 	color: #999;
@@ -1214,7 +1208,7 @@ footer.entry-meta {
 	clear: both;
 	display: block;
 	margin: 0 auto 1.5em;
-	width: 160px;
+	max-width: 19%;
 	padding: 0;
 	float: left;
 }
@@ -1736,19 +1730,10 @@ font-family: Helvetica;
 #site-navigation {
 display: inline-block;
 float: right;
-width: 50%;
-margin: 35px 170px 0 0;
+width: 60%;
 }
 
-#site-navigation li {
-width: 100px;
-float: right;
-}
-
-#site-navigation li a:hover {
-color: silver;
-}
-/*#searchform {
+#searchform {
 display: inline-block;
 float: right;
 position: relative;
@@ -1770,8 +1755,11 @@ outline-width: 0;
 
 
 #searchsubmit { display: none; }
-*/
-.navigation-main { width: auto; }
+
+.navigation-main { 
+width: auto;
+margin-right: 170px; 
+}
 
 .navigation-main a {
 padding: 0px 20px;
@@ -1836,4 +1824,4 @@ width: 550px;
 min-height: 200px;
 }
 
-.logo-link { display: inline-block; }
+

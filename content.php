@@ -7,6 +7,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+	        <div class="entry-meta">
+                        <?php grandscheme_posted_on(); ?>
+                        <?php edit_post_link( __( 'Edit', 'grandscheme' ), '<span class="edit-link">', '</span>' ); ?>
+                </div><!-- .entry-meta -->
 		<div class="ui-auth-info">
 	                <div class="ui-auth-pic"><?php echo get_avatar( get_the_author_email(), '72' ); ?></div>
                		<div class="ui-auth-desc"><?php echo get_the_author_meta('user_description',get_query_var('author') )?></div>
@@ -16,10 +20,6 @@
 		</div>
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'grandscheme' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php grandscheme_posted_on(); ?>
-			<?php edit_post_link( __( 'Edit', 'grandscheme' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
-		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 

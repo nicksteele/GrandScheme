@@ -7,11 +7,13 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<div class="post-format-indicator">
-			<?php if ( get_post_format() ) : ?>
-				<a class="entry-format" href="<?php echo esc_url( get_post_format_link( get_post_format() ) ); ?>" title="<?php echo esc_attr( sprintf( __( 'All %s posts', 'grandscheme' ), get_post_format_string( get_post_format() ) ) ); ?>"><?php echo get_post_format_string( get_post_format() ); ?></a>
-			<?php endif; ?>
-		</div>
+		<div class="ui-auth-info">
+                        <div class="ui-auth-pic"><?php echo get_avatar( get_the_author_email(), '72' ); ?></div>
+                        <div class="ui-auth-desc"><?php echo get_the_author_meta('user_description',get_query_var('author') )?></div>
+                 <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+                        <span class="comments-link"><?php comments_popup_link( __( '0', 'grandscheme' ), __( '1', 'grandscheme' ), __( '%', 'grandscheme' ) ); ?></span>
+                 <?php endif; ?>
+                </div>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
