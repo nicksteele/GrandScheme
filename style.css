@@ -1836,3 +1836,8 @@ min-height: 200px;
 }
 
 .logo-link { display: inline-block; }
+
+#disqus_thread{
+	margin: 0px 94px;
+	width: 600px;
+}
