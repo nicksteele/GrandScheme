@@ -943,7 +943,6 @@ footer.entry-meta {
 	margin: 0 0 1.5em 20px;
 }
 
-
 /* =Post Formats
 -------------------------------------------*/
 
@@ -1737,7 +1736,7 @@ font-family: Helvetica;
 display: inline-block;
 float: right;
 width: 50%;
-margin: 35px 170px 0 0;
+margin: 35px 10px 0 0;
 }
 
 #site-navigation li {
