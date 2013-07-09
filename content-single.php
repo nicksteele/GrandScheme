@@ -7,6 +7,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+		<div class="entry-meta">
+                        <?php grandscheme_posted_on(); ?>
+                        <?php edit_post_link( __( 'Edit', 'grandscheme' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
+                </div><!-- .entry-meta -->
 		<div class="ui-auth-info">
                         <div class="ui-auth-pic"><?php echo get_avatar( get_the_author_email(), '72' ); ?></div>
                         <div class="ui-auth-desc"><?php echo get_the_author_meta('user_description',get_query_var('author') )?></div>
@@ -14,13 +18,8 @@
                         <span class="comments-link"><?php comments_popup_link( __( '0', 'grandscheme' ), __( '1', 'grandscheme' ), __( '%', 'grandscheme' ) ); ?></span>
                  <?php endif; ?>
                 </div>
-
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-			<?php grandscheme_posted_on(); ?>
-			<?php edit_post_link( __( 'Edit', 'grandscheme' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
