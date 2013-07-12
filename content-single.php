@@ -14,9 +14,6 @@
 		<div class="ui-auth-info">
                         <div class="ui-auth-pic"><?php echo get_avatar( get_the_author_email(), '72' ); ?></div>
                         <div class="ui-auth-desc"><?php echo get_the_author_meta('user_description',get_query_var('author') )?></div>
-                 <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-                        <span class="comments-link"><?php comments_popup_link( __( '0', 'grandscheme' ), __( '1', 'grandscheme' ), __( '%', 'grandscheme' ) ); ?></span>
-                 <?php endif; ?>
                 </div>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
@@ -47,5 +44,8 @@
 			<?php echo $tags_list; ?>
 		</span>
 		<?php endif; // End if $tags_list ?>
+                 <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+                        <span class="comments-link"><?php comments_popup_link( __( '0', 'grandscheme' ), __( '1', 'grandscheme' ), __( '%', 'grandscheme' ) ); ?></span>
+                 <?php endif; ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

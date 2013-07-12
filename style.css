@@ -101,7 +101,6 @@ select,
 textarea {
 	font-family: Gudea, Helvetica, Arial, sans-serif;
 	font-size: 15px;
-	font-size: 1.5rem;
 	color: #555;
 	line-height: 1.6;
 }
@@ -365,20 +364,20 @@ textarea {
 
 /* Links */
 a {
-	color: black;
+	color: silver;
 	text-decoration: none;
 	transition: .3s;
 	-moz-transition: .3s;
 	-webkit-transition: .3s;
 }
 a:visited {
-	color: #999;
+	color: silver;
 	text-decoration: none;
 }
 a:hover,
 a:focus,
 a:active {
-	color: #e24949;
+	color: #999;
 	text-decoration: none;
 }
 
@@ -451,7 +450,7 @@ a:active {
 #page {
 	margin: 0 auto;
 	position: relative;
-	width: 600px;
+	width: 960px;
 }
 .entry-meta {
 	clear: both;
@@ -774,16 +773,17 @@ a.rsswidget img {
 ----------------------------------------------------*/
 
 .comments-link {
-	background: url('img/sprite.png') no-repeat #f15d5d;
-	background-position: -190px -129px;
+	background: url('img/sprite.png') no-repeat silver;
+	background-size: 120px 120px;
+	background-position: -85px -24px;
 	border-radius: 40px;
 	display: block;
 	font-size: 12px;
 	font-size: 1.2rem;
-	line-height: 44px;
-	margin-top: 65px;
+	line-height: 40px;
+	margin-top: 20px;
 	position: absolute;
-		left: -67px;
+	left: 22px;
 	text-align: center;
 	width: 40px;
 	height: 40px;
@@ -814,9 +814,9 @@ a.rsswidget img {
 }
 .entry-title {
 	color: #49352f;
-	font-family: "Vollkorn", "Helvetica";
+	font-family: "proxima-nova";
 	padding: 0;
-	margin: 0;
+	margin: -15px;
 	line-height: normal;
 	clear: both;
 	width: 100%;
@@ -901,7 +901,7 @@ footer.entry-meta {
 .hentry,
 .type-page,
 .type-attachment {
-	border-bottom: 2px solid silver;
+	border-bottom: 1px solid silver;
 	clear: both;
 	overflow: hidden;
 	padding: 1.5em 20px;
@@ -1082,9 +1082,9 @@ footer.entry-meta {
 	width: 30%;
 }
 .site-footer [class*="navigation"] .previous a {
-	background-color: #49352f;
+	background-color: #999;
 	border-radius: 40px;
-	color: #fff;
+	color: white;
 	float: left;
 	font-size: 40px;
 	font-size: 4.0rem;
@@ -1096,9 +1096,9 @@ footer.entry-meta {
 	height: 40px;
 }
 .site-footer [class*="navigation"] .next a {
-	background-color: #49352f;
+	background-color: #999;
 	border-radius: 40px;
-	color: #fff;
+	color: white;
 	float: left;
 	font-size: 40px;
 	font-size: 4.0rem;
@@ -1109,13 +1109,15 @@ footer.entry-meta {
 	height: 40px;
 }
 .site-footer [class*="navigation"] .previous a:hover {
-	background-color: #f48278;
+	background-color: white;
+	color: black;
 	transition: .3s;
 	-moz-transition: .3s;
 	-webkit-transition: .3s;
 }
 .site-footer [class*="navigation"] .next a:hover {
-	background-color: #f48278;
+	background-color: white;
+	color: black;
 	transition: .3s;
 	-moz-transition: .3s;
 	-webkit-transition: .3s;
@@ -1630,6 +1632,7 @@ ul.children .reply {
 		position: relative;
 			left: auto;
 	}
+	
 	.comments-link {
 		float: right;
 		margin: 0 15px 20px 0;
@@ -1697,12 +1700,8 @@ ul.children .reply {
 		}
 }
 
-#page {
-width: 840px;
-}
-
 .hentry {
-width: 800px;
+width: 950px;
 }
 
 footer.entry-meta {
@@ -1723,11 +1722,11 @@ overflow: visible;
 
 .tags-links a {
 background: silver;
-border-radius: 4px;
+border-radius: 6px;
 color: white;
 text-align: center;
 display: inline-block;
-padding: 1px 3px;
+padding: 2px 4px;
 font-size: 10px;
 font-family: Helvetica;
 }
@@ -1736,7 +1735,7 @@ font-family: Helvetica;
 display: inline-block;
 float: right;
 width: 50%;
-margin: 35px 10px 0 0;
+margin: 35px -25px 0 0;
 }
 
 #site-navigation li {
@@ -1775,14 +1774,8 @@ outline-width: 0;
 .navigation-main a {
 padding: 0px 20px;
 font-size: 13px;
-font-family: Helvetica, Sans-serif;
+font-family: "proxima-nova";
 font-weight: bold;
-}
-
-.comments-link {
-margin-top: 20px;
-left: 25px;
-background-color: silver;
 }
 
 .ui-auth-info {
@@ -1809,7 +1802,7 @@ color: rgb(151, 151, 151);
 
 .entry-title a {
 color: black;
-font-family: Helvetica;
+font-family: "proxima-nova";
 font-size: 22px;
 font-weight: bold;
 }
@@ -1828,16 +1821,16 @@ width: 100px;
 
 .entry-content, .entry-summary {
 margin: 0;
-font-family: Helvetica;
-font-size: 13px;
+font-family: "Georgia";
+font-size: 18px;
 display: inline-block;
-width: 550px;
+width: 700px;
 min-height: 200px;
 }
 
 .logo-link { display: inline-block; }
 
 #disqus_thread{
-	margin: 0px 94px;
+	margin: 0px 29%;
 	width: 600px;
 }

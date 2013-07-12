@@ -14,9 +14,6 @@
 		<div class="ui-auth-info">
 	                <div class="ui-auth-pic"><?php echo get_avatar( get_the_author_email(), '72' ); ?></div>
                		<div class="ui-auth-desc"><?php echo get_the_author_meta('user_description',get_query_var('author') )?></div>
-		 <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-                        <span class="comments-link"><?php comments_popup_link( __( '0', 'grandscheme' ), __( '1', 'grandscheme' ), __( '%', 'grandscheme' ) ); ?></span>
-                 <?php endif; ?>
 		</div>
 		<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'grandscheme' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 		<?php if ( 'post' == get_post_type() ) : ?>
@@ -59,6 +56,8 @@
 			</span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
-
+		 <?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+                        <span class="comments-link"><?php comments_popup_link( __( '0', 'grandscheme' ), __( '1', 'grandscheme' ), __( '%', 'grandscheme' ) ); ?></span>
+                 <?php endif; ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

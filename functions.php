@@ -12,7 +12,7 @@
  * @since GrandScheme 1.0
  */
 if ( ! isset( $content_width ) )
-	$content_width = 560; /* pixels */
+	$content_width = 700; /* pixels. originally 560 */
 
 /**
  * Set a new content_width if using the wide page template
