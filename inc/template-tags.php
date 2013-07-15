@@ -38,8 +38,8 @@ function grandscheme_content_nav( $nav_id ) {
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="previous">%link</div>', '<span class="meta-nav">' . _x( '&laquo;', 'Previous post link', 'grandscheme' ) . '</span>' ); ?>
-		<?php next_post_link( '<div class="next">%link</div>', '<span class="meta-nav">' . _x( '&raquo;', 'Next post link', 'grandscheme' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="previous">%link</div>', '<span class="meta-nav">' . _x( 'Last', 'Previous post link', 'grandscheme' ) . '</span>' ); ?>
+		<?php next_post_link( '<div class="next">%link</div>', '<span class="meta-nav">' . _x( 'Next', 'Next post link', 'grandscheme' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
@@ -135,7 +135,7 @@ function grandscheme_posted_on() {
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-			esc_attr( sprintf( __( 'View all posts by %s', 'pachyderm' ), get_the_author() ) ),
+			esc_attr( sprintf( __( 'View all posts by %s', 'grandscheme' ), get_the_author() ) ),
 			esc_html( get_the_author() )
 		);
 	}

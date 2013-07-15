@@ -12,8 +12,12 @@
                         <?php edit_post_link( __( 'Edit', 'grandscheme' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
                 </div><!-- .entry-meta -->
 		<div class="ui-auth-info">
-                        <div class="ui-auth-pic"><?php echo get_avatar( get_the_author_email(), '72' ); ?></div>
-                        <div class="ui-auth-desc"><?php echo get_the_author_meta('user_description',get_query_var('author') )?></div>
+                        <div class="ui-auth-pic"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>"><?php echo get_avatar( get_the_author_email(), '72' ); ?></a></div>
+			<div class="ui-auth-desc">
+                               <div class="ui-auth-name"> <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
+                                        <?php echo get_the_author_meta('first_name',get_query_var('author'))?></a></div>
+                                <?php echo get_the_author_meta('user_description',get_query_var('author') )?>
+                        </div>
                 </div>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
