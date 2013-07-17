@@ -38,17 +38,16 @@ function grandscheme_content_nav( $nav_id ) {
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="previous">%link</div>', '<span class="meta-nav">' . _x( 'Last', 'Previous post link', 'grandscheme' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="previous">%link</div>', '<span class="meta-nav">' . _x( 'Previous', 'Previous post link', 'grandscheme' ) . '</span>' ); ?>
 		<?php next_post_link( '<div class="next">%link</div>', '<span class="meta-nav">' . _x( 'Next', 'Next post link', 'grandscheme' ) . '</span>' ); ?>
-
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<div class="previous"><?php next_posts_link( '<span class="meta-nav">' . _x( '&laquo;', 'Older posts', 'grandscheme' ) . '</span>' ); ?></div>
+		<div class="previous"><?php next_posts_link( '<span class="meta-nav">' . _x( 'Previous', 'Older posts', 'grandscheme' ) . '</span>' ); ?></div>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="next"><?php previous_posts_link( '<span class="meta-nav">' . _x( '&raquo;', 'Newer posts', 'grandscheme' ) . '</span>' ); ?></div>
+		<div class="next"><?php previous_posts_link( '<span class="meta-nav">' . _x( 'Next', 'Newer posts', 'grandscheme' ) . '</span>' ); ?></div>
 		<?php endif; ?>
 
 	<?php endif; ?>
