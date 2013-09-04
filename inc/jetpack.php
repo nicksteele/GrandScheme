@@ -10,6 +10,7 @@
  * Add theme support for Infinite Scroll.
  * See: http://jetpack.me/support/infinite-scroll/
  */
+/**
 function grandscheme_infinite_scroll_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container'  => 'content',
@@ -28,3 +29,4 @@ if ( function_exists( 'jetpack_is_mobile' ) ) {
 	}
 	add_filter( 'infinite_scroll_has_footer_widgets', 'grandscheme_infinite_scroll_has_footer_widgets' );
 }
+*/
