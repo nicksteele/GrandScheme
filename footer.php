@@ -13,18 +13,6 @@
 	<?php get_sidebar(); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<?php grandscheme_content_nav( 'nav-below' ); ?>
-			<?php $subsPref = array(
-			'prepend' => '', 
-			'showname' => false,
-			'nametxt' => 'Name:', 
-			'nameholder' => 'Name...', 
-			'emailtxt' => '',
-			'emailholder' => ' Email Address', 
-			'showsubmit' => true, 
-			'submittxt' => 'Subscribe to Our Blog', 
-			'jsthanks' => false,
-			'thankyou' => 'Thank you for subscribing to our mailing list');
-			echo smlsubform($subsPref); ?> <!-- #subscribe -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

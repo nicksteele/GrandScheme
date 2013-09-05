@@ -758,7 +758,8 @@ a.rsswidget img {
 
 .sml_subscribe {
 	height: 40px;
-	margin-left: -12em;
+	margin-left: 190px;
+	margin-right: auto;
 }
 p.sml_email {
 	font-family: proxima-nova;
@@ -1749,7 +1750,7 @@ font-family: Helvetica;
 #site-navigation {
 display: inline-block;
 float: right;
-width: 50%;
+width: 400px;
 margin: 35px -25px 0 0;
 }
 
@@ -1873,44 +1874,33 @@ border-bottom: 1px solid silver;
 
 .ui-shwoop {
 	display: none;
-	position: fixed;
-	z-index: 999;
-	background: white;
-	top: 30%;
-	right: -425px;
 	padding: 10px;
-	border-radius: 5px;
-	box-shadow: -2px 4px 9px #747474;
+	margin-bottom: 12px;
+	border-color: silver;
+	border-width: 1px;
+	border-style: solid none;
 }
 
-.ui-shwoop {
-	right: -5px;
+.subscribe-button{
+	cursor: pointer;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: "proxima-nova";
+	transition: .3s;
+	-webkit-transition: .3s;	
 }
 
-.subscribe {
-	height: 52px;
-	width: 77px;
-	background: white;
-	position: relative;
-	z-index: 2;
-	left: -75px;
-	top: 90px;
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #140202;
-	padding: 10px 20px;
-	background: -moz-linear-gradient( top, #fff3db 0%, #ffc821 25%, #ff3c00);
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px -1px 0px rgba(255,255,255,0.7);
+.subscribe-button:hover {
+	color: #F15824;
 }
 
+.subscribe_msg {
+	margin: 1px 270px 10px;
+	font-weight: bold;
+	color: black;
+	font-family: "proxima-nova";
+}
 #menu-item-54 {
 	target-new:tab;
 }
